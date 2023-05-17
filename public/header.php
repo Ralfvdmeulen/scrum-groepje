@@ -20,6 +20,7 @@
                 <li class="nav-item"><a href="index.php" class="nav-link">registratie overzicht</a></li>
                 <li class="nav-item"><a href="index.php" class="nav-link">medewerkers</a></li>
                 <li class="nav-item"><a href="klant.php" class="nav-link">klanten aanmaken</a></li>
+                <li class="nav-item"><a href="klantoverzicht.php" class="nav-link">klanten overzicht</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>

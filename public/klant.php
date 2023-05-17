@@ -2,7 +2,7 @@
 
 <section class="projects">
         <div class="container">
-        <h1>selecteer de boot: </h1><br>
+        <h1>Voeg een Klant toe: </h1><br>
        
     <table>
              <form method="post" action="../src/klant.inc.php">
@@ -54,7 +54,7 @@
             <td><br></td>
         </tr>
         <tr>
-            <td><input class="button" name="voegklanttoe" type="submit" value="voegklanttoe"></td>
+            <td><input class="button" name="voegklanttoe" type="submit" value="voeg klant toe"></td>
         </tr>
              </form>
             </table>
