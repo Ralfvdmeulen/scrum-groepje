@@ -6,8 +6,7 @@
        
         
     <table>
-             <form method="post" action="../src/reserveren.inc.php" 
-    </section>
+             <form method="post" action="../src/reserveren.inc.php">
         <tr>
             <td><br></td>
         </tr>
