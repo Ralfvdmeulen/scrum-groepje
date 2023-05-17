@@ -1,18 +1,20 @@
 <?php include 'userfunction.php'?>
+<?php include 'header.php' ?>
+<?php include '../config/config.php' ?>
 <?php
 
 // isset voor het reserveren
-if(isset($_POST["reserveer"]))
+if(isset($_POST["submit"]))
 {
-    $resboot = $_POST['boot'];
-    $resvoornaam = $_POST['voornaam'];
-    $resachternaam = $_POST['achternaam'];
-    $resemail = $_POST['email'];
-    $restelefoonnummer = $_POST['telefoonnummer'];
-    $resdagdeel = $_POST['dagdeel'];
-    $resdrinken = $_POST['drinken'];
-    $reseten = $_POST['eten'];
-
+        if (isset($_POST['submit'])) {
+            $naam = $_POST['naam'];
+            $achternaam = $_POST['achternaam'];
+            $telefoonnummer = $_POST['telefoonnummer'];
+            $email = $_POST['email'];
+            $adres = $_POST['adres'];
+            $postcode = $_POST['postcode'];
+        }
+        
     // $resboot, $resvoornaam, $resachternaam, $resemail, $restelefoonnummer, $resdagdeel, $resdrinken, $reseten 
    // error handlings geeft aan in de url wat de error is en wordt gebruikt in andere functies checkt ook of hij leeg is
     if(emptyinputreserveren($resvoornaam, $resachternaam, $resemail, $restelefoonnummer) !== false)
