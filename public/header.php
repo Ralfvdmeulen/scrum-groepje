@@ -1,11 +1,7 @@
-<?php include '../config/config.php';?>
-<?php include '../config/database.php';?>
-<?php include '../src/userfunction.php';?>
 
-<?php
-    session_start();
-?>
 <!DOCTYPE html>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
