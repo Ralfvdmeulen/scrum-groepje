@@ -16,6 +16,13 @@
         </tr>
         <tr>
             <td><br></td>
+            <tr>
+            <td><label for="tussenvoegsel">tussenvoegsel</label></td>
+            <td><input name="tussenvoegsel" type="text" placeholder="vul hier je tussenvoegsel"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
         </tr>
         <tr>
             <td><label for="achternaam">achternaam</label></td>
@@ -26,8 +33,15 @@
         </tr>
         <tr>
         <tr>
-            <td><label for="telefoonnummer">telefoonnummer </label></td>
-            <td><input name="telefoonnummer" type="text" placeholder="vul hier je telefoonnummer"></td>
+            <td><label for="mobielnummer">mobielnummer </label></td>
+            <td><input name="mobielnummer" type="text" placeholder="vul hier je mobielnummer"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td><label for="vastnummer">vastnummer </label></td>
+            <td><input name="vastnummer" type="text" placeholder="vul hier je vastnummer"></td>
         </tr>
         <tr>
             <td><br></td>
