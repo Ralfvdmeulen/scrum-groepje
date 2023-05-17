@@ -14,7 +14,8 @@ if(isset($_POST["submit"]))
             $postcode = $_POST['postcode'];
 
             $sql = "INSERT INTO klant (naam, achternaam, telefoonnummer, email, adres, postcode) VALUES ('$naam', '$achternaam', '$telefoonnummer', '$email', '$adres', '$postcode')";
-
+            mysqli_query($conn, $sql);
+            
         }
     }
         
