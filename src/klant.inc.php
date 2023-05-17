@@ -13,6 +13,9 @@ if(isset($_POST["submit"]))
             $email = $_POST['email'];
             $adres = $_POST['adres'];
             $postcode = $_POST['postcode'];
+
+            $sql = "INSERT INTO klant (naam, achternaam, telefoonnummer, email, adres, postcode) VALUES ('$naam', '$achternaam', '$telefoonnummer', '$email', '$adres', '$postcode')";
+
         }
         
     // $resboot, $resvoornaam, $resachternaam, $resemail, $restelefoonnummer, $resdagdeel, $resdrinken, $reseten 
