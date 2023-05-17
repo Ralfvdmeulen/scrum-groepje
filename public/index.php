@@ -2,6 +2,7 @@
 <section class="projects">
         <div class="container">
             <h2>test pagina</h2>
+            <p></p>
         </div>
     </section>
 
