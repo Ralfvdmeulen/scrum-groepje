@@ -4,9 +4,9 @@
         <div class="container">
         <h1>selecteer de boot: </h1><br>
        
-        
+        </section>
     <table>
-             <form method="post" action="../src/reserveren.inc.php">
+             <form method="post" action="../src/klant.inc.php">
         <tr>
             <td><br></td>
         </tr>
