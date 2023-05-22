@@ -1,7 +1,9 @@
+<?php include '../config/config.php' ?>
 
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,14 +33,14 @@
                 echo '<li class="nav-item"><a href="../src/logout.inc.php" class="nav-link">logout</a></li>';
             }
             else {
-            echo '<li class="nav-item"><a href="signup.php" class="nav-link">Signup</a></li>';
+
             echo '<li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>';  
             }
             ?>
                 <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.php" class="nav-link">registratie aanmaken</a></li>
-                <li class="nav-item"><a href="index.php" class="nav-link">registratie overzicht</a></li>
-                <li class="nav-item"><a href="index.php" class="nav-link">medewerkers</a></li>
+                <li class="nav-item"><a href="registratie.php.php" class="nav-link">registratie aanmaken</a></li>
+                <li class="nav-item"><a href="registratieoverzicht.php" class="nav-link">registratie overzicht</a></li>
+                <li class="nav-item"><a href="medewerker.php" class="nav-link">medewerkers aanmaken</a></li>
                 <li class="nav-item"><a href="klant.php" class="nav-link">klanten aanmaken</a></li>
                 <li class="nav-item"><a href="klantoverzicht.php" class="nav-link">klanten overzicht</a></li>
             </ul>

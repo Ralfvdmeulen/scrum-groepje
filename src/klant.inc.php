@@ -1,5 +1,5 @@
 <?php include 'userfunction.php'?>
-<?php include '../config/config.php' ?>
+<?php include '../public/header.php' ?>
 <?php
             $naam = $_POST['voornaam'];
             $achternaam = $_POST['achternaam'];
