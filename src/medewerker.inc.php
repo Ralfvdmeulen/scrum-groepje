@@ -1,5 +1,5 @@
 <?php include '../public/header.php' ?>
-<?php include '../userfunction.php'?>
+<?php include 'userfunction.php'?>
 <?php
             $naam = $_POST['voornaammedewerker'];
             $tussenvoegsel = $_POST['tussenvoegselmedewerker'];
@@ -11,6 +11,6 @@
             $sql = "INSERT INTO medewerker (naam, tussenvoegsel , achternaam, wachtwoord, functie)
              VALUES ('$naam', '$tussenvoegsel', '$achternaam', '$wachtwoord', '$functie')";
             if (mysqli_query($conn, $sql)) {
-                  echo " Klant aangemaakt";
+                  echo " medewerker aangemaakt";
             }
   ?>

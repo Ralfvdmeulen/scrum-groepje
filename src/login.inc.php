@@ -7,5 +7,4 @@ if(isset($_POST["login"]))
     $loginname = $_POST['username'];
     $loginpassword = $_POST['wachtwoord'];
 }
-loginuser($conn, $loginemail, $loginpassword);
-?>
+userexists($conn, $loginname, $loginpassword);

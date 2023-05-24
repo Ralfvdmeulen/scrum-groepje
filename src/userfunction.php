@@ -1,77 +1,82 @@
 
-<?php include '../config/config.php' ?>
+<?php include 'databasefunctions.php' ?>
 <?php
-
-function userexists($conn, $email)
+$conn = db_connect();
+function userexists($conn, $naam, $pass)
     {
-        $sql = "SELECT * FROM klanten WHERE email = ?;";
-        $stmt = mysqli_stmt_init($conn);
-        if (!mysqli_stmt_prepare($stmt, $sql))
-        {
-            header("location: ../Public/signup.php?error=statementfailedemail");
-            exit();
-        }
+        $mysqli = db_connect();
+        $medewerkers = $mysqli->query("SELECT * FROM medewerker");
+     
+      
 
-        mysqli_stmt_bind_param($stmt, "s",  $email);
-        mysqli_stmt_execute($stmt);
-
-        $resultdata = mysqli_stmt_get_result($stmt);
-
-        if($row = mysqli_fetch_assoc($resultdata))
-        {
-            return $row;
-        }
-        else 
-        {
-            $result = false;
-            return $result;
-        }
-
-        mysqli_stmt_close($stmt);
-    }
-    
-
-    function loginuser($conn, $email, $pwd)
-{
-    $uidexists = userexists($conn, $email);
-
-    if ($uidexists === false)
-    {
-        header("location: ../Public/login.php?error=wrongloginuidexit");
-        exit();
-    }
-
-    $databasepwd = $uidexists["wachtwoord"];
-    
-    
-    if($pwd == $databasepwd)
-    {
-        $checkpwd = true;
-    }
-    else {
-        $checkpwd = false;
-    }
-
-    if($checkpwd === false)
-    {
-        header("location: ../public/login.php?error=wronglogin");
-        exit();
-    }
-    else if($checkpwd === true)
-    {
+      if (mysqli_num_rows($medewerkers) > 0)
+      {
+         while($medewerker = mysqli_fetch_assoc($medewerkers))
+          {
+            if($naam == $medewerker["naam"] & $pass == $medewerker["wachtwoord"])
+            {
+                echo "inlog data is hetzelfde";
+                header("location: ../Public/index.php");
+                break;
+            }
+          }
         session_start();
-        if($uidexists["voornaam"] == "admin"){
-            $_SESSION["useradmin"] = "admin";
+        if($medewerker["functie"] == "medewerker"){
+            $_SESSION["medewerker"] = "medewerker";
         }
-        else {
-            $_SESSION["userid"] = $uidexists["klantid"];
+        else if($medewerker["functie"] == "eigenaar"){
+            $_SESSION["eigenaar"] = "eigenaar";
         }
-        
-        $_SESSION["klantnaam"] = $uidexists["voornaam"];
         header("location: ../Public/index.php");
         exit();
+          } else {
+          echo "0 results";
+     }
     }
-}
+    
+
+//     function loginuser($conn, $name, $pwd)
+// {
+//     $uidexists = userexists($conn, $name, $pwd);
+
+//     if ($uidexists === false)
+//     {
+//         header("location: ../Public/login.php?error=wrongloginuidexit");
+        
+//         exit();
+//     }
+
+//     $databasepwd = $uidexists["wachtwoord"];
+    
+    
+//     if($pwd == $databasepwd)
+//     {
+//         $checkpwd = true;
+//     }
+//     else {
+//         $checkpwd = false;
+//     }
+
+//     if($checkpwd === false)
+//     {
+//         header("location: ../public/login.php?error=wronglogin");
+//         exit();
+//     }
+//     else if($checkpwd === true)
+//     {
+//         session_start();
+//         if($uidexists["voornaam"] == "admin"){
+//             $_SESSION["useradmin"] = "admin";
+//         }
+//         else {
+//             $_SESSION["userid"] = $uidexists["klantid"];
+//         }
+        
+//         $_SESSION["klantnaam"] = $uidexists["voornaam"];
+//         header("location: ../Public/index.php");
+//         exit();
+//     }
+// }
 
 
 ?>
