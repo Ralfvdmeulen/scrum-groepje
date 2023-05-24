@@ -1,15 +1,17 @@
 <?php include 'userfunction.php'?>
-<?php include '../public/header.php' ?>
 <?php
             $naam = $_POST['voornaam'];
+            $tussenvoegsel = $_POST['tussenvoegsel'];
             $achternaam = $_POST['achternaam'];
-            $telefoonnummer = $_POST['telefoonnummer'];
+            $mobielnummer = $_POST['mobielnummer'];
+            $vastnummer = $_POST['vastnummer'];
             $email = $_POST['email'];
             $adres = $_POST['addres'];
             $postcode = $_POST['postcode'];
 
-            $sql = "INSERT INTO klant (naam, achternaam, telefoonnummer, email, adres, postcode) VALUES ('$naam', '$achternaam', '$telefoonnummer', '$email', '$adres', '$postcode')";
+            $sql = "INSERT INTO klant (naam, tussenvoegsel ,achternaam, mobielnummer, vastnummer , email, adres, postcode) VALUES ('$naam','$tussenvoegsel', '$achternaam', '$mobielnummer', '$vastnummer', '$email', '$adres', '$postcode')";
             if (mysqli_query($conn, $sql)) {
-                  echo " Klant aangemaakt";
+                  echo " klant aangemaakt";
+                  header("location: ../Public/klantoverzicht.php");
             }
   ?>
