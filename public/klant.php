@@ -11,21 +11,21 @@
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="voornaam">voornaam</label></td>
+            <td><label for="voornaam">Voornaam</label></td>
             <td><input required name="voornaam" type="text" placeholder="vul hier je voornaam"></td>
         </tr>
         <tr>
             <td><br></td>
             <tr>
-            <td><label for="tussenvoegsel">tussenvoegsel</label></td>
-            <td><input name="tussenvoegsel" type="text" placeholder="vul hier je tussenvoegsel"></td>
+            <td><label for="tussenvoegsel">Tussenvoegsel</label></td>
+            <td><input name="tussenvoegsel" type="text" placeholder="Vul hier uw tussenvoegsel in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         </tr>
         <tr>
-            <td><label for="achternaam">achternaam</label></td>
+            <td><label for="achternaam">Achternaam</label></td>
             <td><input required name="achternaam" type="text" placeholder="vul hier je achternaam"></td>
         </tr>
         <tr>
@@ -33,42 +33,42 @@
         </tr>
         <tr>
         <tr>
-            <td><label for="mobielnummer">mobielnummer </label></td>
-            <td><input name="mobielnummer" type="text" placeholder="vul hier je mobielnummer"></td>
+            <td><label for="mobielnummer">Mobiel nummer </label></td>
+            <td><input name="mobielnummer" type="text" placeholder="Vul hier uw mobielnummer in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="vastnummer">vastnummer </label></td>
-            <td><input name="vastnummer" type="text" placeholder="vul hier je vastnummer"></td>
+            <td><label for="vastnummer">Vast nummer </label></td>
+            <td><input name="vastnummer" type="text" placeholder="Vul hier uw vastnummer in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="email">email</label></td>
+            <td><label for="email">Email</label></td>
             <td><input required name="email" type="email" placeholder="vul hier je email"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="addres">addres</label></td>
-            <td><input required name="addres" type="text" placeholder="vul hier je addres"></td>
+            <td><label for="addres">Adres</label></td>
+            <td><input required name="addres" type="text" placeholder="Vul hier uw addres in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="postcode">postcode</label></td>
+            <td><label for="postcode">Postcode</label></td>
             <td><input required name="postcode" type="text" placeholder="vul hier je postcode"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><input class="button" name="voegklanttoe" type="submit" value="voeg klant toe"></td>
+            <td><input class="button" name="voegklanttoe" type="submit" value="Voeg klant toe"></td>
         </tr>
              </form>
             </table>
