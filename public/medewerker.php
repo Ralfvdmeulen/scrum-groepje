@@ -12,7 +12,7 @@
         </tr>
         <tr>
             <td><label for="voornaam">voornaam</label></td>
-            <td><input name="voornaammedewerker" type="text" placeholder="vul hier je voornaam"></td>
+            <td><input required name="voornaammedewerker" type="text" placeholder="vul hier je voornaam"></td>
         </tr>
         <tr>
             <td><br></td>
@@ -26,7 +26,7 @@
         </tr>
         <tr>
             <td><label for="achternaam">achternaam</label></td>
-            <td><input name="achternaammedewerker" type="text" placeholder="vul hier je achternaam"></td>
+            <td><input required name="achternaammedewerker" type="text" placeholder="vul hier je achternaam"></td>
         </tr>
         <tr>
             <td><br></td>
@@ -34,14 +34,14 @@
         <tr>
         <tr>
             <td><label for="wachtwoord">wachtwoord </label></td>
-            <td><input name="wachtwoordmedewerker" type="password" placeholder="vul hier het wachtwoord"></td>
+            <td><input required name="wachtwoordmedewerker" type="password" placeholder="vul hier het wachtwoord"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
             <td><label for="functie">functie </label></td>
-            <td><input name="functiemedewerker" type="text" placeholder="vul hier de functie"></td>
+            <td><input required name="functiemedewerker" type="text" placeholder="vul hier de functie"></td>
         </tr>
         <tr>
             <td><br></td>

@@ -11,6 +11,6 @@
             $sql = "INSERT INTO medewerker (naam, tussenvoegsel , achternaam, wachtwoord, functie)
              VALUES ('$naam', '$tussenvoegsel', '$achternaam', '$wachtwoord', '$functie')";
             if (mysqli_query($conn, $sql)) {
-                  echo " medewerker aangemaakt";
+                  header('location: ../public/medewerkeroverzicht.php');
             }
   ?>
