@@ -12,7 +12,7 @@
         </tr>
         <tr>
             <td><label for="voornaam">voornaam</label></td>
-            <td><input name="voornaam" type="text" placeholder="vul hier je voornaam"></td>
+            <td><input required name="voornaam" type="text" placeholder="vul hier je voornaam"></td>
         </tr>
         <tr>
             <td><br></td>
@@ -26,7 +26,7 @@
         </tr>
         <tr>
             <td><label for="achternaam">achternaam</label></td>
-            <td><input name="achternaam" type="text" placeholder="vul hier je achternaam"></td>
+            <td><input required name="achternaam" type="text" placeholder="vul hier je achternaam"></td>
         </tr>
         <tr>
             <td><br></td>
@@ -48,21 +48,21 @@
         </tr>
         <tr>
             <td><label for="email">email</label></td>
-            <td><input name="email" type="email" placeholder="vul hier je email"></td>
+            <td><input required name="email" type="email" placeholder="vul hier je email"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
             <td><label for="addres">addres</label></td>
-            <td><input name="addres" type="text" placeholder="vul hier je addres"></td>
+            <td><input required name="addres" type="text" placeholder="vul hier je addres"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
             <td><label for="postcode">postcode</label></td>
-            <td><input name="postcode" type="text" placeholder="vul hier je postcode"></td>
+            <td><input required name="postcode" type="text" placeholder="vul hier je postcode"></td>
         </tr>
         <tr>
             <td><br></td>

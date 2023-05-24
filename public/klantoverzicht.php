@@ -10,12 +10,37 @@
     <title>Klachtoverzicht</title>
 </head>
 <body>
-    <div class="overzicht">
-        <table>
-            <?php 
-                echo "LOL";
+    <div class="overzicht-container">
+        <div class="overzicht">
+        <table class="klanten-overzicht">
+            <tr>
+                <th>Voornaam</th>
+                <th>Tussenvoegsel</th>
+                <th>Achternaam</th>
+                <th>Mobielnummer</th>
+                <th>Vastnummer</th>
+                <th>Email</th>
+                <th>Adres</th>
+            </tr>
+            <?php   
+                $query = "SELECT * FROM klant";
+                db_connect();
+                $result = db_getData($query);
+            
+                foreach ($result as $data) {
+                    echo "<tr>";
+                    echo "<td>" . $data["naam"] . "</td>";
+                    echo "<td>" . $data["tussenvoegsel"] . "</td>";
+                    echo "<td>" . $data["achternaam"] . "</td>";
+                    echo "<td>" . $data["mobielnummer"] . "</td>";
+                    echo "<td>" . $data["vastnummer"] . "</td>";
+                    echo "<td>" . $data["email"] . "</td>";
+                    echo "<td>" . $data["adres"] . "</td>";
+                    echo "</tr>";
+                }
             ?>
         </table>
+        </div>
     </div>
 </body>
 </html>
