@@ -41,7 +41,10 @@
         </tr>
         <tr>
             <td><label for="functie">functie </label></td>
-            <td><input required name="functiemedewerker" type="text" placeholder="vul hier de functie"></td>
+            <td><select required name="functie" id="">
+                <option name="eigenaar">Eigenaar</option>
+                <option name="medewerker">Medewerker</option>
+            </select></td>
         </tr>
         <tr>
             <td><br></td>

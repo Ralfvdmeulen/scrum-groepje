@@ -5,7 +5,7 @@
             $tussenvoegsel = $_POST['tussenvoegselmedewerker'];
             $achternaam = $_POST['achternaammedewerker'];
             $wachtwoord = $_POST['wachtwoordmedewerker'];
-            $functie = $_POST['functiemedewerker'];
+            $functie = $_POST['functie'];
          
 
             $sql = "INSERT INTO medewerker (naam, tussenvoegsel , achternaam, wachtwoord, functie)
