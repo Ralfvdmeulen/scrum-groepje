@@ -23,21 +23,21 @@
 
             if(isset($_SESSION["medewerker"]))
             {
-                echo '<li class="nav-item"><a href="index.php" class="nav-link">home</a></li>';
-                echo '<li class="nav-item"><a href="registratie.php" class="nav-link">registratie</a></li>';
-                echo '<li class="nav-item"><a href="registratieoverzicht.php" class="nav-link">registratie overzicht</a></li>';
-                echo '<li class="nav-item"><a href="../src/logout.inc.php" class="nav-link">logout</a></li>';
+                echo '<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>';
+                echo '<li class="nav-item"><a href="registratie.php" class="nav-link">Registratie</a></li>';
+                echo '<li class="nav-item"><a href="registratieoverzicht.php" class="nav-link">Registratie overzicht</a></li>';
+                echo '<li class="nav-item"><a href="../src/logout.inc.php" class="nav-link">Logout</a></li>';
             }
             else if (isset($_SESSION["eigenaar"])) 
             {
-                echo '<li class="nav-item"><a href="index.php" class="nav-link">home</a></li>';
-                echo '<li class="nav-item"><a href="registratie.php" class="nav-link">registratie</a></li>';
-                echo '<li class="nav-item"><a href="registratieoverzicht.php" class="nav-link">registratie overzicht</a></li>';
-                echo '<li class="nav-item"><a href="klant.php" class="nav-link">klanten aanmaken</a></li>';
-                echo '<li class="nav-item"><a href="klantoverzicht.php" class="nav-link">klanten overzicht</a></li>';
-                echo '<li class="nav-item"><a href="medewerker.php" class="nav-link">medewerkers aanmaken</a></li>';
-                echo '<li class="nav-item"><a href="medewerkeroverzicht.php" class="nav-link">medewerker overzicht</a></li>';
-                echo '<li class="nav-item"><a href="../src/logout.inc.php" class="nav-link">logout</a></li>';
+                echo '<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>';
+                echo '<li class="nav-item"><a href="registratie.php" class="nav-link">Registratie</a></li>';
+                echo '<li class="nav-item"><a href="registratieoverzicht.php" class="nav-link">Registratie overzicht</a></li>';
+                echo '<li class="nav-item"><a href="klant.php" class="nav-link">Klanten aanmaken</a></li>';
+                echo '<li class="nav-item"><a href="klantoverzicht.php" class="nav-link">Klanten overzicht</a></li>';
+                echo '<li class="nav-item"><a href="medewerker.php" class="nav-link">Medewerkers aanmaken</a></li>';
+                echo '<li class="nav-item"><a href="medewerkeroverzicht.php" class="nav-link">Medewerker overzicht</a></li>';
+                echo '<li class="nav-item"><a href="../src/logout.inc.php" class="nav-link">Logout</a></li>';
             }
             else {
 
