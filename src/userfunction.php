@@ -36,8 +36,14 @@ function userexists($conn, $naam, $pass)
 
     if (isset($_POST['del-knop']))
     {
-       del_User($_POST['del-knop']);
+       del_Klant($_POST['del-knop']);
        header("location: ../Public/klantoverzicht.php");
+    }
+
+    if (isset($_POST['del-knop-medewerker']))
+    {
+       del_Medewerker($_POST['del-knop-medewerker']);
+       header("location: ../Public/medewerkeroverzicht.php");
     }
 
 //     function loginuser($conn, $name, $pwd)

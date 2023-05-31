@@ -31,7 +31,7 @@ $result = db_getData($query)?>
                      echo "<td>" . $klanten['adres'] . "</td>";
                      echo "<td>" . $klanten['postcode'] . "</td>";
                      echo "<td><form method=POST action=../src/userfunction.php>
-                                     <input name=del-knop type=submit value=".$klanten['ID'].">
+                                     <input id=del-knop-input name=del-knop type=submit value=".$klanten['ID'].">
                                 </form></td>";
                      echo "</tr> ";
                      ?>

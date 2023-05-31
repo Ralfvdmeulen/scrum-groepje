@@ -164,9 +164,21 @@ input[type=text]{
     border-radius: 4px;
     cursor: pointer;
   }
+
+  #del-knop-input {
+    width: 100px;
+    background: red;
+    color: red;
+  }
+  #del-knop-medewerker {
+    width: 100px;
+    background: red;
+    color: red;
+  }
+
   .klanten-overzicht {
     margin-top: 30px;
-    width: 85%;
+    width: 90%;
     text-align: center;
   }
   .klanten-overzicht th{
