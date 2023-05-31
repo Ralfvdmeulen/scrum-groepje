@@ -12,7 +12,6 @@
 
             // Invoersels naar hoofdletters
             $naam = ucfirst($naam); 
-            $tussenvoegsel = ucfirst($tussenvoegsel);
             $achternaam = ucfirst($achternaam);
             $adres = ucfirst($adres);
       	$postcode = $_POST['postcode'];
