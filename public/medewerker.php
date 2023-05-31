@@ -42,8 +42,8 @@
         <tr>
             <td><label for="functie">functie </label></td>
             <td><select required name="functie" id="">
-                <option name="eigenaar">Eigenaar</option>
-                <option name="medewerker">Medewerker</option>
+                <option name="eigenaar">eigenaar</option>
+                <option name="medewerker">medewerker</option>
             </select></td>
         </tr>
         <tr>
