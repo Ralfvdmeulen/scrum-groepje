@@ -39,6 +39,5 @@ $result = db_getData($query)?>
 </div>
 </div>
 </div>
-<footer class="medewerkerfooter">
+
 <?php include_once("footer.php");?>
-</footer>
