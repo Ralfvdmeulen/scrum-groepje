@@ -33,7 +33,12 @@ function userexists($conn, $naam, $pass)
           echo "0 results";
      }
     }
-    
+
+    if (isset($_POST['del-knop']))
+    {
+       del_User($_POST['del-knop']);
+       header("location: ../Public/klantoverzicht.php");
+    }
 
 //     function loginuser($conn, $name, $pwd)
 // {
