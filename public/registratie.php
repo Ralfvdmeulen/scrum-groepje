@@ -5,42 +5,42 @@
         <h1>registratie: </h1><br>
        
     <table>
-             <form method="post" action="../src/klant.inc.php">
+             <form method="post" action="../src/registratie.inc.php">
             
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="voornaam">datum</label></td>
-            <td><input required name="voornaam" type="text" placeholder="vul hier de datum"></td>
+            <td><label for="datum">datum</label></td>
+            <td><input required name="datum" type="text" placeholder="vul hier de datum"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
             <tr>
-            <td><label for="tussenvoegsel">uren</label></td>
-            <td><input name="tussenvoegsel" type="text" placeholder="Vul hier de uren"></td>
+            <td><label for="uren">uren</label></td>
+            <td><input name="uren" type="text" placeholder="Vul hier de uren"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="achternaam">taakomschrijving</label></td>
-            <td><input required name="achternaam" type="text" placeholder="vul hier de omschrijving "></td>
+            <td><label for="taakomschrijving">taakomschrijving</label></td>
+            <td><input required name="taakomschrijving" type="text" placeholder="vul hier de omschrijving "></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="achternaam">klant</label></td>
-            <td><input required name="achternaam" type="text" placeholder="vul hier de klant"></td>
+            <td><label for="klant">klant</label></td>
+            <td><input required name="klant" type="text" placeholder="vul hier de klant"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="achternaam">medewerker</label></td>
-            <td><input required name="achternaam" type="text" placeholder="vul hier de medewerker"></td>
+            <td><label for="medewerker">medewerker</label></td>
+            <td><input required name="medewerker" type="text" placeholder="vul hier de medewerker"></td>
         </tr>
         <tr>
             <td><br></td>
