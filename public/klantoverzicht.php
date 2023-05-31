@@ -1,47 +1,44 @@
-<?php include("../src/databasefunctions.php") ?>
-<?php include("header.php") ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klachtoverzicht</title>
-</head>
-<body>
-    <div class="overzicht-container">
-        <div class="overzicht">
-        <table class="klanten-overzicht">
-            <tr>
-                <th>Voornaam</th>
-                <th>Tussenvoegsel</th>
-                <th>Achternaam</th>
-                <th>Mobielnummer</th>
-                <th>Vastnummer</th>
-                <th>Email</th>
-                <th>Adres</th>
-            </tr>
-            <?php   
-                $query = "SELECT * FROM klant";
-                db_connect();
-                $result = db_getData($query);
-            
-                foreach ($result as $data) {
-                    echo "<tr>";
-                    echo "<td>" . $data["naam"] . "</td>";
-                    echo "<td>" . $data["tussenvoegsel"] . "</td>";
-                    echo "<td>" . $data["achternaam"] . "</td>";
-                    echo "<td>" . $data["mobielnummer"] . "</td>";
-                    echo "<td>" . $data["vastnummer"] . "</td>";
-                    echo "<td>" . $data["email"] . "</td>";
-                    echo "<td>" . $data["adres"] . "</td>";
-                    echo "</tr>";
-                }
-            ?>
-        </table>
-        </div>
-    </div>
-</body>
-</html>
-<?php include("footer.php") ?>
+<?php include_once("header.php");
+include_once("../src/databasefunctions.php");
+$query = "SELECT * FROM `klant`;";
+$result = db_getData($query)?>
+<link rel="stylesheet" href="css/styleMedewerkers.css">
+<div class="overzicht-container">
+    <div class="overzicht">
+    <table class="klanten-overzicht">
+    <tr>
+        <th>Naam</th>
+        <th>Tussenvoegsel</th>
+        <th>Achternaam</th>
+        <th>Mobiel nummer</th>
+        <th>Vast nummer</th>
+        <th>Email</th>
+        <th>Adres</th>
+        <th>Postcode</th>
+    </tr>
+<?php
+{
+    while($klanten = $result->fetch_assoc()) {
+        ?>
+            <?php
+                     echo "<tr>";
+                     echo "<td>" . $klanten['naam'] . "</td>";
+                     echo "<td>" . $klanten['tussenvoegsel'] . "</td>";
+                     echo "<td>" . $klanten['achternaam'] . "</td>";
+                     echo "<td>" . $klanten['mobielnummer'] . "</td>";
+                     echo "<td>" . $klanten['vastnummer'] . "</td>";
+                     echo "<td>" . $klanten['email'] . "</td>";
+                     echo "<td>" . $klanten['adres'] . "</td>";
+                     echo "<td>" . $klanten['postcode'] . "</td>";
+                     echo "</tr> ";
+                     ?>
+        <?php
+    }
+}?>
+</table>
+</div>
+</div>
+</div>
+<footer class="medewerkerfooter">
+<?php include_once("footer.php");?>
+</footer>
