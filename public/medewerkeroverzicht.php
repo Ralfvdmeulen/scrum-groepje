@@ -3,8 +3,9 @@ include_once("../src/databasefunctions.php");
 $query = "SELECT * FROM `medewerker`;";
 $result = db_getData($query)?>
 <link rel="stylesheet" href="css/styleMedewerkers.css">
-<div class="containerMedewerker">
-<table>
+<div class="overzicht-container">
+    <div class="overzicht">
+    <table class="klanten-overzicht">
     <tr>
         <th>Naam</th>
         <th>Achternaam</th>
@@ -27,6 +28,8 @@ $result = db_getData($query)?>
     }
 }?>
 </table>
+</div>
+</div>
 </div>
 <footer class="medewerkerfooter">
 <?php include_once("footer.php");?>

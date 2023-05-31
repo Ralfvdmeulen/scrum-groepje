@@ -151,6 +151,9 @@ input[type=text]{
     box-sizing: border-box;
   }
 
+  .overzicht {
+    width: 100%;
+  }
   input[type=submit] {
     width: 100%;
     background-color: black;
@@ -162,32 +165,17 @@ input[type=text]{
     cursor: pointer;
   }
   .klanten-overzicht {
-    width: 50%;
     margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .klanten-overzicht th{
+    font-size: 30px;
   }
   .klanten-overzicht td {
-    color: rgb(0, 0, 0);
-    border: rgb(77, 92, 171) 3px solid;
-    width: 5%;
     font-size: 20px;
   }
-  
-  .overzicht-container {
-    display: flex;
-    justify-content: center;
-  }
-  .containerMedewerker{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
 
-.containerMedewerker td{
-    color: rgb(0, 0, 0);
-    border: rgb(77, 92, 171) 3px solid;
-    width: 5%;
-    font-size: 20px;
-}
 .login {
     float: left;
 }
