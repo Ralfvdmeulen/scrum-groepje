@@ -30,6 +30,9 @@ $result = db_getData($query)?>
                      echo "<td>" . $klanten['email'] . "</td>";
                      echo "<td>" . $klanten['adres'] . "</td>";
                      echo "<td>" . $klanten['postcode'] . "</td>";
+                     echo "<td><form method=POST action=../src/userfunction.php>
+                                     <input name=del-knop type=submit value=".$klanten['ID'].">
+                                </form></td>";
                      echo "</tr> ";
                      ?>
         <?php
@@ -39,6 +42,4 @@ $result = db_getData($query)?>
 </div>
 </div>
 </div>
-<footer class="medewerkerfooter">
 <?php include_once("footer.php");?>
-</footer>
