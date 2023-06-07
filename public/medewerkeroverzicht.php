@@ -22,7 +22,7 @@ $result = db_getData($query) ?>
                     echo "<td>" . $medewerkers['wachtwoord'] . "</td>";
                     echo "<td>" . $medewerkers['functie'] . "</td>";
                     echo "<td><form class=del-form method=POST action=../src/userfunction.php>
-                                <input name=del-knop-medewerker class=del-knop-input type=submit value=" . $medewerkers['ID'] . ">
+                                <input name=del-knop-medewerker id=del-knop-medewerker type=submit value=" . $medewerkers['ID'] . ">
                             </form></td>";
                     echo "</tr>";
                     ?>

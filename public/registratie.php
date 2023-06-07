@@ -12,7 +12,7 @@
         </tr>
         <tr>
             <td><label for="datum">datum</label></td>
-            <td><input required name="datum" type="text" placeholder="vul hier de datum"></td>
+            <td><input required name="datum" type="date" placeholder="vul hier de datum"></td>
         </tr>
         <tr>
             <td><br></td>
