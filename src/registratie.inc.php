@@ -4,7 +4,7 @@
             $uren = $_POST['uren'];
             $taakomschrijving = $_POST['taakomschrijving'];
             $klant = $_POST['klant'];
-            $medewerker = $_SESSION['medewerkersid'];
+            $medewerker = $_POST['medewerker'];
 
             $sql = "INSERT INTO `registratie` (`datumtijd`, `uren`, `taakomschrijving`, `klant`, `medewerker`) VALUES ('$datum', '$uren', '$taakomschrijving', '$klant', '$medewerker');";
 

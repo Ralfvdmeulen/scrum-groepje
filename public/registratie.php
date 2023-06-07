@@ -38,6 +38,8 @@
         <tr>
             <td><br></td>
         </tr>
+            <td><label for="medewerker">Medewerker</label></td>
+            <td><input required name="medewerker" type="text" placeholder="Vul medewerker in"></td>
         <tr>
             <td><br></td>
         </tr>
