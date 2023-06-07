@@ -6,7 +6,7 @@ $query = "SELECT * FROM `klant`;";
 $result = db_getData($query);
 ?>
 
-<link rel="stylesheet" href="../public/css/style.css">
+<link rel="stylesheet" href="./css/style.css">
 <div class="overzicht-container">
     <div class="overzicht">
         <table class="klanten-overzicht">
@@ -33,7 +33,7 @@ $result = db_getData($query);
                 echo "<td>" . $klanten['postcode'] . "</td>";
                 echo "<td>
                         <form class='del-form' method='POST' action='../src/userfunction.php'>
-                            <input class='del-knop-input' name='del-knop' type='submit' value='" . $klanten['ID'] . "'>
+                            <input class=del-knop-input name='del-knop' type='submit' value='".$klanten['ID']."'>
                         </form>
                     </td>";
                 echo "</tr> ";

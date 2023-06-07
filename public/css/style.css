@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +8,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(127, 138, 236);
 }
-
 /* header */
 header {
     background-color: black;
@@ -17,7 +16,6 @@ header {
 li {
     list-style: none;
 }
-
 a {
     color: white;
     text-decoration: none;
@@ -32,7 +30,6 @@ a {
     color: green;
     font-size: 30px;
 }
-
 .navbar {
     min-height: 70px;
     display: flex;
@@ -66,7 +63,7 @@ a {
     cursor: pointer;
 }
 
-.bar {
+.bar{
     display: block;
     width: 25px;
     height: 3px;
@@ -75,16 +72,15 @@ a {
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
-
 /* content en login css */
 
-.container {
+.container{
     max-width: 1200px;
     margin: 0px auto;
     padding: 0px 20px;
 }
 
-.btn-secondary {
+.btn-secondary{
     background-color: black;
     padding: 15px 20px;
     display: block;
@@ -95,30 +91,30 @@ a {
     text-decoration: none;
 }
 
-.projects {
+.projects{
     display: flex;
     padding: 20px 0px;
     justify-content: center;
-
+    
 }
 
-.projects h2 {
+.projects h2{
     margin: 20px 0px;
 }
 
-.projects .projectList .project {
+.projects .projectList .project{
     margin: 20px 0px;
     padding: 20px;
     border: 2px solid gray;
 }
 
-.projects .projectList .project img {
+.projects .projectList .project img{
     width: 100%;
     max-height: 200px;
     object-fit: cover;
 }
 
-.projects .projectList .project h3 {
+.projects .projectList .project h3{
     margin: 10px 0px;
 }
 
@@ -127,7 +123,7 @@ a {
     width: 200px;
 }
 
-input[type=text] {
+input[type=text]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -135,9 +131,8 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-input[type=email] {
+  }
+  input[type=email]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -145,9 +140,8 @@ input[type=email] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-input[type=password] {
+  }
+  input[type=password]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -155,13 +149,13 @@ input[type=password] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
+  }
 
-.overzicht {
+  .overzicht {
     width: 100%;
-}
+  }
 
-input[type=submit] {
+  input[type=submit] {
     width: 100%;
     background-color: black;
     color: white;
@@ -170,50 +164,46 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+  }
 
-.klanten-overzicht {
+  .klanten-overzicht {
     margin-top: 30px;
     width: 100%;
     text-align: center;
-}
-
-.klanten-overzicht th {
+  }
+  .klanten-overzicht th{
     font-size: 30px;
-}
-
-.klanten-overzicht td {
+  }
+  .klanten-overzicht td {
     font-size: 20px;
-}
-
+  }
+  
 .login {
     float: left;
 }
-
 .signup {
     float: left;
 }
 
 input[type=submit]:hover {
     background-color: gray;
-}
+  }
 
-.restable {
+  .restable {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-}
-
-.restd,
-.resth {
+  }
+  
+  .restd, .resth {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-}
-
-.restr:nth-child(even) {
+  }
+  
+  .restr:nth-child(even) {
     background-color: #dddddd;
-}
+  }
 
 .errorbutton {
     text-decoration: none;
@@ -222,7 +212,7 @@ input[type=submit]:hover {
     border: 3px;
     background-color: #800000;
 }
-
+  
 /* footer */
 footer {
     height: 50px;
@@ -240,7 +230,7 @@ footer {
     .projectList {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content:  space-between;
         gap: 10px;
 
     }
@@ -250,32 +240,32 @@ footer {
         box-sizing: border-box;
     }
 
-}
+  }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
     .project {
         flex: 20%;
     }
-}
-
-@media(max-width:768px) {
-    .hamburger {
-        display: block;
+} 
+   
+@media(max-width:768px){
+    .hamburger{
+        display:block;
     }
 
-    .hamburger.active .bar:nth-child(2) {
+    .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
 
-    .hamburger.active .bar:nth-child(1) {
+    .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger.active .bar:nth-child(3) {
+    .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-menu {
+    .nav-menu{
         position: fixed;
         left: -100%;
         top: 70px;
