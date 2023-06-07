@@ -39,10 +39,6 @@
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="medewerker">medewerker</label></td>
-            <td><input required name="medewerker" type="text" placeholder="vul hier de medewerker"></td>
-        </tr>
-        <tr>
             <td><br></td>
         </tr>
         <tr>

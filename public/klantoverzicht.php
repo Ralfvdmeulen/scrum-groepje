@@ -34,8 +34,8 @@ $result = db_getData($query);
                      echo "<td>" . $klanten['email'] . "</td>";
                      echo "<td>" . $klanten['adres'] . "</td>";
                      echo "<td>" . $klanten['postcode'] . "</td>";
-                     echo "<td><form method=POST action=../src/userfunction.php>
-                                     <input name=del-knop type=submit value=".$klanten['ID'].">
+                     echo "<td><form class=del-form method=POST action=../src/userfunction.php>
+                                     <input name=del-knop class=del-knop-input type=submit value=".$klanten['ID'].">
                                 </form></td>";
                      echo "</tr> ";
                      ?>
@@ -46,4 +46,6 @@ $result = db_getData($query);
 </div>
 </div>
 </div>
+<script src="../public/js/jquery-3.6.3.min.js"></script>
+<script src="../public/js/jquery.js"></script>
 <?php include_once("footer.php");?>

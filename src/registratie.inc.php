@@ -4,7 +4,13 @@
             $uren = $_POST['uren'];
             $taakomschrijving = $_POST['taakomschrijving'];
             $klant = $_POST['klant'];
-            $medewerker = $_POST['medewerker'];
+            $medewerker = $_SESSION['medewerkersid'];
 
             $sql = "INSERT INTO `registratie` (`datumtijd`, `uren`, `taakomschrijving`, `klant`, `medewerker`) VALUES ('$datum', '$uren', '$taakomschrijving', '$klant', '$medewerker');";
+
+            if (mysqli_query($conn, $sql)) {
+                header("location: ../public/registratieoverzicht.php");
+            } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
   ?>
