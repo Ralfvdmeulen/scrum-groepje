@@ -13,7 +13,6 @@ function userexists($conn, $naam, $pass)
       {
          while($medewerker = mysqli_fetch_assoc($medewerkers))
           {
-            $_SESSION['medewerkerid'] = $medewerker["ID"];
             if($naam == $medewerker["naam"] & $pass == $medewerker["wachtwoord"])
             {
                 echo "inlog data is hetzelfde";
