@@ -21,8 +21,8 @@ $result = db_getData($query) ?>
                     echo "<td>" . $medewerkers['achternaam'] . "</td>";
                     echo "<td>" . $medewerkers['wachtwoord'] . "</td>";
                     echo "<td>" . $medewerkers['functie'] . "</td>";
-                    echo "<td><form method=POST action=../src/userfunction.php>
-                                <input name=del-knop-medewerker id=del-knop-medewerker type=submit value=" . $medewerkers['ID'] . ">
+                    echo "<td><form class=del-form method=POST action=../src/userfunction.php>
+                                <input name=del-knop-medewerker class=del-knop-input type=submit value=" . $medewerkers['ID'] . ">
                             </form></td>";
                     echo "</tr>";
                     ?>
@@ -33,6 +33,8 @@ $result = db_getData($query) ?>
     </div>
 </div>
 </div>
+<script src="../public/js/jquery-3.6.3.min.js"></script>
+<script src="../public/js/jquery.js"></script>
 <footer class="medewerkerfooter">
     <?php include_once("footer.php"); ?>
 </footer>
