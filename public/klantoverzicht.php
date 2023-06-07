@@ -33,11 +33,14 @@ $result = db_getData($query)?>
                      echo "<td><form method=POST action=../src/userfunction.php>
                                      <input name=del-knop type=submit value=".$klanten['ID'].">
                                 </form></td>";
+                                
                      echo "</tr> ";
+
                      ?>
         <?php
     }
 }?>
+
 </table>
 </div>
 </div>
