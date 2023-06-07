@@ -150,6 +150,9 @@ input[type=text]{
     border-radius: 4px;
     box-sizing: border-box;
   }
+  .del-knop-input {
+    background-image: url(../css/red.jpg);
+  }
 
   .overzicht {
     width: 100%;
