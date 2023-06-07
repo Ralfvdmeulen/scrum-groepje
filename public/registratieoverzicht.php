@@ -11,6 +11,7 @@ $result = db_getData($query) ?>
                 <th>Uren</th>
                 <th>Taakomschrijving</th>
                 <th>Klant</th>
+                <th>Medewerker  </th>
             </tr>
             <?php {
                 while ($registraties = $result->fetch_assoc()) {
@@ -21,6 +22,7 @@ $result = db_getData($query) ?>
                     echo "<td>" . $registraties['uren'] . "</td>";
                     echo "<td>" . $registraties['taakomschrijving'] . "</td>";
                     echo "<td>" . $registraties['klant'] . "</td>";
+                    echo "<td>" . $registraties['medewerker'] . "</td>";
                     echo "</tr>";
                     ?>
             <?php
