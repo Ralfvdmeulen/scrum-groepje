@@ -1,5 +1,5 @@
 <?php include 'header.php' ?>
-
+<body>
 <section class="projects">
         <div class="container">
         <h1>Voeg een Klant toe: </h1><br>
@@ -74,4 +74,5 @@
             </table>
             </div>
         </section>
+</body>
     <?php include 'footer.php' ?>

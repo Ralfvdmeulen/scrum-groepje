@@ -16,9 +16,17 @@ function db_getData($query)
     return $result;
 }
 
-function del_User($id) {
+function del_Klant($id) {
     $mysqli = db_connect();
     $sql = "DELETE FROM `klant` WHERE `ID` = $id";
+    $result = $mysqli->query($sql);
+    $mysqli->close();
+    return $result;
+}
+
+function del_Medewerker($id) {
+    $mysqli = db_connect();
+    $sql = "DELETE FROM `medewerker` WHERE `ID` = $id";
     $result = $mysqli->query($sql);
     $mysqli->close();
     return $result;

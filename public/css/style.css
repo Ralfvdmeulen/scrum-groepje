@@ -154,6 +154,7 @@ input[type=text]{
   .overzicht {
     width: 100%;
   }
+
   input[type=submit] {
     width: 100%;
     background-color: black;
@@ -164,9 +165,10 @@ input[type=text]{
     border-radius: 4px;
     cursor: pointer;
   }
+
   .klanten-overzicht {
     margin-top: 30px;
-    width: 85%;
+    width: 100%;
     text-align: center;
   }
   .klanten-overzicht th{
