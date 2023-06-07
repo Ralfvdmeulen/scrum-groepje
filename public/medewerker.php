@@ -2,7 +2,7 @@
 
 <section class="projects">
         <div class="container">
-        <h1>maak een account een medewerker: </h1><br>
+        <h1>Maak een account voor een medewerker: </h1><br>
        
     <table>
              <form method="post" action="../src/medewerker.inc.php">
@@ -11,46 +11,46 @@
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="voornaam">voornaam</label></td>
-            <td><input required name="voornaammedewerker" type="text" placeholder="vul hier je voornaam"></td>
+            <td><label for="voornaam">Voornaam</label></td>
+            <td><input required name="voornaammedewerker" type="text" placeholder="Vul hier de voornaam in"></td>
         </tr>
         <tr>
             <td><br></td>
             <tr>
-            <td><label for="tussenvoegsel">tussenvoegsel</label></td>
-            <td><input name="tussenvoegselmedewerker" type="text" placeholder="vul hier je tussenvoegsel"></td>
+            <td><label for="tussenvoegsel">Tussenvoegsel</label></td>
+            <td><input name="tussenvoegselmedewerker" type="text" placeholder="Vul hier het tussenvoegsel in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         </tr>
         <tr>
-            <td><label for="achternaam">achternaam</label></td>
-            <td><input required name="achternaammedewerker" type="text" placeholder="vul hier je achternaam"></td>
+            <td><label for="achternaam">Achternaam</label></td>
+            <td><input required name="achternaammedewerker" type="text" placeholder="Vul hier de achternaam in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
         <tr>
-            <td><label for="wachtwoord">wachtwoord </label></td>
-            <td><input required name="wachtwoordmedewerker" type="password" placeholder="vul hier het wachtwoord"></td>
+            <td><label for="wachtwoord">Wachtwoord </label></td>
+            <td><input required name="wachtwoordmedewerker" type="password" placeholder="Vul hier het wachtwoord in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="functie">functie </label></td>
+            <td><label for="functie">Functie </label></td>
             <td><select required name="functie" id="">
-                <option name="eigenaar">eigenaar</option>
-                <option name="medewerker">medewerker</option>
+                <option name="eigenaar">Eigenaar</option>
+                <option name="medewerker">Medewerker</option>
             </select></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><input class="button" name="voegmedewerkertoe" type="submit" value="voeg medewerker toe"></td>
+            <td><input class="button" name="voegmedewerkertoe" type="submit" value="Voeg medewerker toe"></td>
         </tr>
       
              </form>

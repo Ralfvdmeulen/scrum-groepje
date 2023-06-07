@@ -11,42 +11,42 @@
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="datum">datum</label></td>
-            <td><input required name="datum" type="date" placeholder="vul hier de datum"></td>
+            <td><label for="datum">Datum</label></td>
+            <td><input required name="datum" type="date" placeholder="Vul hier de datum in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
             <tr>
-            <td><label for="uren">uren</label></td>
-            <td><input name="uren" type="text" placeholder="Vul hier de uren"></td>
+            <td><label for="uren">Uren</label></td>
+            <td><input name="uren" type="text" placeholder="Vul hier de uren in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="taakomschrijving">taakomschrijving</label></td>
-            <td><input required name="taakomschrijving" type="text" placeholder="vul hier de omschrijving "></td>
+            <td><label for="taakomschrijving">Taakomschrijving</label></td>
+            <td><input required name="taakomschrijving" type="text" placeholder="Vul hier de omschrijving in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="klant">klant</label></td>
-            <td><input required name="klant" type="text" placeholder="vul hier de klant"></td>
+            <td><label for="klant">Klant</label></td>
+            <td><input required name="klant" type="text" placeholder="Vul hier de klant in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><label for="medewerker">medewerker</label></td>
-            <td><input required name="medewerker" type="text" placeholder="vul hier de medewerker"></td>
+            <td><label for="medewerker">Medewerker</label></td>
+            <td><input required name="medewerker" type="text" placeholder="Vul hier de medewerker in"></td>
         </tr>
         <tr>
             <td><br></td>
         </tr>
         <tr>
-            <td><input class="button" name="maakregistratie" type="submit" value="maak registratie"></td>
+            <td><input class="button" name="maakregistratie" type="submit" value="Maak registratie aan"></td>
         </tr>
              </form>
             </table>

@@ -5,14 +5,14 @@
 ?>
 <div class="page registreren">
         <div class="container">
-            <h1>inloggen</h1><br>
+            <h1>Inloggen</h1><br>
             <div class="login">
             <table>
                
              <form method="post" action="../src/login.inc.php">
         <tr>
-            <td><label for="username">naam</label></td>
-            <td><input name="username" type="text" placeholder="vul hier je naam"></td>
+            <td><label for="username">Naam</label></td>
+            <td><input name="username" type="text" placeholder="Vul hier uw naam in"></td>
         </tr>
         <tr>
             <td><br></td>
@@ -20,7 +20,7 @@
         <tr>
         <tr>
             <td><label for="wachtwoord">Wachtwoord</label></td>
-            <td><input name="wachtwoord" type="password" placeholder="vul hier je wachtwoord"></td>
+            <td><input name="wachtwoord" type="password" placeholder="Vul hier uw wachtwoord in"></td>
         </tr>
         <tr>
             <td><br></td>
