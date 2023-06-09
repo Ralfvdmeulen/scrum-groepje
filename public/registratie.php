@@ -12,16 +12,11 @@ $result = db_getData($query) ?>
                 <th>Tussenvoegsel</th>
                 <th>Achternaam</th>
             </tr>
-            <tr>
-                <td>Hallo1</td>
-                <td>Hallo2</td>
-                <td>Hallo3</td>
-            </tr>
             <?php {
                 while ($klanten = $result->fetch_assoc()) {
                     ?>
                     <?php
-                    echo "<tr>";
+                    echo "<tr id=tr-click>";
                     echo "<td>" . $klanten['naam'] . "</td>";
                     echo "<td>" . $klanten['tussenvoegsel'] . "</td>";
                     echo "<td>" . $klanten['achternaam'] . "</td>";

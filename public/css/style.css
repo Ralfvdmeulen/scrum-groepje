@@ -194,9 +194,10 @@ input[type=text]{
   }
   .registratie-overzicht th {
     font-size: 30px;
-    
   }
-
+  .registratie-overzicht #tr-click:hover {
+    background-color: aqua;
+  }
   .klanten-overzicht {
     margin-top: 30px;
     width: 100%;
