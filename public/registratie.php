@@ -6,7 +6,7 @@ $result = db_getData($query) ?>
 <section class="projects">
     <div class="container">
 
-        <table class="klanten-overzicht" id="klantSelect">
+        <table class="registratie-overzicht" id="klantSelect">
             <tr>
                 <th>Naam</th>
                 <th>Tussenvoegsel</th>

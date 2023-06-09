@@ -1,6 +1,7 @@
 <?php include 'header.php' ?>
 
 <section class="projects">
+    <div>
         <div class="container">
         <h1>Maak een account voor een medewerker: </h1><br>
        
@@ -55,6 +56,7 @@
       
              </form>
             </table>
+            </div>
             </div>
         </section>
     <?php include 'footer.php' ?>

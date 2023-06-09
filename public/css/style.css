@@ -75,6 +75,7 @@ a {
 /* content en login css */
 
 .container{
+    width: 100%;
     max-width: 1200px;
     margin: 0px auto;
     padding: 0px 20px;
@@ -181,6 +182,19 @@ input[type=text]{
     width: 100px;
     background: red;
     color: red;
+  }
+
+  .registratie-overzicht {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .registratie-overzicht td {
+    font-size: 20px;
+  }
+  .registratie-overzicht th {
+    font-size: 30px;
+    
   }
 
   .klanten-overzicht {

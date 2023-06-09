@@ -1,6 +1,7 @@
 <?php include 'header.php' ?>
 <body>
 <section class="projects">
+    <div>
         <div class="container">
         <h1>Voeg een Klant toe: </h1><br>
        
@@ -72,6 +73,7 @@
         </tr>
              </form>
             </table>
+            </div>
             </div>
         </section>
 </body>
