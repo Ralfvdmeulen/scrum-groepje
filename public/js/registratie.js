@@ -38,7 +38,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
       let input = document.getElementById('klantIn');
 
       // Get all the table rows
-      const rows = table.getElementsByTagName('tr');
+      const rows = table.getElementsByClassName("tr-click");
 
       // Add click event listener to each row
       for (let i = 0; i < rows.length; i++) {

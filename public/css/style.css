@@ -191,11 +191,12 @@ input[type=text]{
   }
   .registratie-overzicht td {
     font-size: 20px;
+    cursor: pointer;
   }
   .registratie-overzicht th {
     font-size: 30px;
   }
-  .registratie-overzicht #tr-click:hover {
+  .registratie-overzicht .tr-click:hover {
     background-color: aqua;
   }
   .klanten-overzicht {

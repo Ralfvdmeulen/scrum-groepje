@@ -16,7 +16,7 @@ $result = db_getData($query) ?>
                 while ($klanten = $result->fetch_assoc()) {
                     ?>
                     <?php
-                    echo "<tr id=tr-click>";
+                    echo "<tr class=tr-click >";
                     echo "<td>" . $klanten['naam'] . "</td>";
                     echo "<td>" . $klanten['tussenvoegsel'] . "</td>";
                     echo "<td>" . $klanten['achternaam'] . "</td>";
