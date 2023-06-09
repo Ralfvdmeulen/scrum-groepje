@@ -80,6 +80,13 @@ a {
     padding: 0px 20px;
 }
 
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
 .btn-secondary{
     background-color: black;
     padding: 15px 20px;
@@ -150,14 +157,10 @@ input[type=text]{
     border-radius: 4px;
     box-sizing: border-box;
   }
-  .del-knop-input {
-    background-image: url(../css/red.jpg);
-  }
 
   .overzicht {
     width: 100%;
   }
-
   input[type=submit] {
     width: 100%;
     background-color: black;
@@ -167,6 +170,17 @@ input[type=text]{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  #del-knop-input {
+    width: 100px;
+    background: red;
+    color: red;
+  }
+  #del-knop-medewerker {
+    width: 100px;
+    background: red;
+    color: red;
   }
 
   .klanten-overzicht {
