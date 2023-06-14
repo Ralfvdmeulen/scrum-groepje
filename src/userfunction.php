@@ -21,6 +21,8 @@ function userexists($conn, $naam, $pass)
             }
           }
         session_start();
+        $_SESSION["medewerkernaam"] = $medewerker["naam"];
+        $_SESSION["medewerkernaam"] = $medewerker["ID"];
         if($medewerker["functie"] == "medewerker"){
             $_SESSION["medewerker"] = "medewerker";
         }
